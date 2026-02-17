@@ -1,0 +1,20 @@
+def power_set(arr, index=0, current=None):
+    
+    if current is None:
+        current = []
+    
+   
+    if index == len(arr):
+        print(current)
+        return
+    
+    power_set(arr, index + 1, current)
+    
+  
+    power_set(arr, index + 1, current + [arr[index]])
+
+
+
+arr = [1, 2, 3]
+print("Power Set:")
+power_set(arr)
