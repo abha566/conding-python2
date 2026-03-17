@@ -1,0 +1,33 @@
+list=[2,3,4,5,6]
+list1= type((list))
+print(list1)
+
+
+list=[2,3,4,5,6]
+print(list[0])
+
+
+fruits=["apple","banana","cherry"]
+fruits[1]="orange"
+print(fruits)
+
+
+number=[2,3,4,5,6]
+number.append(7)
+number.insert(4,10)
+print("Adding number:",number)
+number.remove(6)
+print("After removing:",number)
+
+
+
+number=[2,3,4,5,6]
+copy_list=number[0:]
+print("original number",number)
+print("copied number",copy_list)
+
+numbers = [1,2,3,4,5]
+copy_list =list(numbers)
+print("original list:",numbers)
+print("copied list:",copy_list)
+
